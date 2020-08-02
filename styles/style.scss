@@ -1,0 +1,22 @@
+@import "variable";
+@import "navbar";
+@import "scss/fontawesome.scss";
+@import "scss/brands.scss";
+@import "scss/regular.scss";
+@import "scss/solid.scss";
+@import "left-menu";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.right-menu{
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    right: 0;
+}

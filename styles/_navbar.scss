@@ -1,0 +1,39 @@
+.navbar{
+    background: rgb(197, 199, 197);
+    height: 50px;
+    width: 100%;
+    .logo{
+        span{
+            #primary{
+                color: $baseColor;
+                }
+            
+            letter-spacing: 2px;
+            font-size: 25px;
+            font-weight: 200;
+        }
+    }   
+    .hamburger-menu{
+        position: relative;
+        background: $primaryColor;
+        cursor: pointer;
+        .line{
+            height: 2px;
+            width: 35px;
+            &::before,&::after{
+                position: absolute;
+                content: '';
+                background: $primaryColor;
+                height: 2px;
+                width: 35px;
+                display: block;
+            }
+            &::after{
+                top: 8px;
+            }
+            &::before{
+                top: -8px;
+            }
+        }
+    }
+}
