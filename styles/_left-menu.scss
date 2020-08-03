@@ -1,10 +1,27 @@
 .left-menu{
     position: fixed;
     width: 100px;
-    height: 100vh;
+    margin-top: 50px;
+    height: 80vh;
+    .follow{
+        p{
+            margin: 50px auto;
+            transform: rotate(270deg);
+            text-transform: capitalize;
+        }
+        .line{
+            width: 3px;
+            height: 80px;
+            background: $baseColor;
+        }
+    }
     .social-media{
-        a{
-            color: black;
+        a{  
+            margin-top: 10px;
+            color: $primaryColor;
+            &:hover{
+                color: $baseColor;
+            }
         }
     }
 }

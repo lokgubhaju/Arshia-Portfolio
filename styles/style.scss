@@ -5,6 +5,8 @@
 @import "scss/regular.scss";
 @import "scss/solid.scss";
 @import "left-menu";
+@import "right-menu";
+@import "intro";
 *{
     margin: 0;
     padding: 0;
@@ -12,11 +14,9 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color:rgb(245, 243, 239);
+}
+.active{
+    background: $baseColor;
 }
 
-.right-menu{
-    position: fixed;
-    width: 100px;
-    height: 100%;
-    right: 0;
-}
