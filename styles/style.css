@@ -6264,6 +6264,10 @@ readers do not read off random characters that represent icons */
   text-transform: uppercase;
 }
 
+.intro {
+  height: 100vh;
+}
+
 .intro .intro-text h4 {
   margin: 20px auto;
 }
@@ -6361,6 +6365,117 @@ readers do not read off random characters that represent icons */
   -webkit-animation: circling 18s linear infinite;
           animation: circling 18s linear infinite;
   z-index: 11;
+}
+
+.about-me {
+  height: 100vh;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.about-me .content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about-me .content .content-wrapper {
+  position: relative;
+  margin-bottom: -40px;
+  z-index: -1;
+}
+
+.about-me .content .content-wrapper span {
+  color: #e2e4e7;
+  font-weight: bolder;
+  font-size: 55px;
+}
+
+.about-me #base {
+  color: #4ebda6;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.about-me .about-img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.about-me .about-img img {
+  border-radius: 15px;
+  border: 5px solid white;
+  -webkit-box-shadow: 10px 10px 10px #dadada, -10px -10px 10px #fafafa;
+          box-shadow: 10px 10px 10px #dadada, -10px -10px 10px #fafafa;
+}
+
+.about-me .about-detail {
+  margin-left: 20px;
+}
+
+.about-me .about-detail #base {
+  text-transform: uppercase;
+}
+
+.about-me .about-detail h2 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.about-me .about-detail b {
+  width: 100px;
+  display: inline-block;
+  border-right: 1px solid black;
+  margin-right: 20px;
+  text-transform: capitalize;
+}
+
+.about-me .about-detail p {
+  font-size: 15px;
+  text-align: left;
+}
+
+.about-me .cv {
+  text-transform: capitalize;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.about-me .cv a {
+  color: #4ebda6;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 25px;
+  text-decoration: none;
+  -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+          box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+}
+
+.about-me .cv a:hover {
+  -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa, inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
+          box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa, inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+.about-me .activities {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  -webkit-box-shadow: 10px 10px 10px #dadada, -10px -10px 10px #fafafa;
+          box-shadow: 10px 10px 10px #dadada, -10px -10px 10px #fafafa;
+}
+
+.about-me .activities img {
+  height: 50px;
+  width: 50px;
+  margin: 20px auto;
+}
+
+.about-me .activities h2 {
+  margin-bottom: 30px;
 }
 
 * {
