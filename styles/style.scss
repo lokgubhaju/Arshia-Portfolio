@@ -1,9 +1,5 @@
 @import "variable";
 @import "navbar";
-@import "scss/fontawesome.scss";
-@import "scss/brands.scss";
-@import "scss/regular.scss";
-@import "scss/solid.scss";
 @import "left-menu";
 @import "right-menu";
 @import "intro";
@@ -19,4 +15,89 @@ body{
 }
 .active{
     background: $baseColor;
+}
+.resume{
+    height: 100%;
+    margin-top: 150px;
+    .content{   
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        .content-wrapper{
+            position: relative;
+            margin-bottom: -40px;
+            z-index: -1;
+            span{
+                color: #e2e4e7;
+                font-weight: bolder;
+                font-size: 55px;
+                @include caps();
+            }
+        }
+        h2{
+            @include caps
+        }
+    }
+    .education{
+        h2{
+            @include caps;
+            text-align: center;
+        }
+        .timeline{
+        border-radius: 20px;
+        border:5px solid green;
+        padding: 50px;
+            .timeline-bar{
+                width: 2px;
+                height: 80%;
+                position: relative;
+                margin: 0 auto;
+                margin-top: 30px;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 15px;
+                    margin-top: 30px;
+                    margin-left: -6px;
+                }
+            }
+            .green{
+                background-color: green;
+                &::after{
+                background-color: green;
+                }
+            }
+            .blue{
+                background-color: blue;
+                &::after{
+                    background-color: blue;
+                }
+            }
+            .red{
+                background-color: red;
+                &::after{
+                    background-color: red;
+                }
+            }
+            
+            .degree{
+                #degree{
+                    @include caps;
+                    font-weight: bold;
+                    margin-top: 40px;
+                    margin-bottom: 10px;
+                }
+                span{
+                    color: $baseColor;
+                }
+                #description{
+                    margin-top: 20px;
+                }
+
+            }
+        }
+    }
+    
 }

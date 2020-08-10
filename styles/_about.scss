@@ -1,8 +1,14 @@
+@mixin caps{
+    text-transform: capitalize;
+}
+@mixin upper-txt{
+    text-transform: uppercase;
+}
+
 .about-me{
     height: 100vh;
     text-align: center;
-    text-transform: capitalize;
-    .content{
+    .content{   
         margin-top: 50px;
         margin-bottom: 50px;
         .content-wrapper{
@@ -13,7 +19,11 @@
                 color: #e2e4e7;
                 font-weight: bolder;
                 font-size: 55px;
+                @include caps();
             }
+        }
+        h2{
+            @include caps;
         }
     }
     #base{
@@ -34,8 +44,9 @@
     }
     .about-detail{
         margin-left: 20px;
+        @include caps;
         #base{
-            text-transform: uppercase;
+            @include upper-txt;
         }
         h2{
             text-align: left;
@@ -46,7 +57,6 @@
             display: inline-block;
             border-right: 1px solid black;
             margin-right: 20px;
-            text-transform: capitalize;
         }
         p{
             font-size: 15px;
@@ -54,7 +64,7 @@
         }        
     }
     .cv{
-        text-transform: capitalize;
+        @include caps;
         margin-right: 20px;
         margin-top: 30px;            
         a{
@@ -80,6 +90,7 @@
         padding-top: 20px;
         padding-bottom: 30px;
         box-shadow: 10px 10px 10px #dadada, -10px -10px 10px #fafafa;
+        @include caps;
         img{
             height: 50px;
             width: 50px;
