@@ -1,0 +1,229 @@
+.resume{
+    height: 100%;
+    margin-top: 100px;
+    .content{   
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        .content-wrapper{
+            position: relative;
+            margin-bottom: -40px;
+            z-index: -1;
+            span{
+                color: #e2e4e7;
+                font-weight: bolder;
+                font-size: 55px;
+                @include caps();
+            }
+        }
+        h2{
+            @include caps
+        }
+    }
+    .education{
+        h2{
+            @include caps;
+            text-align: center;
+        }
+        .timeline{
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px #dadada, -5px -5px 5px #fafafa;
+        padding: 50px;
+            .timeline-bar{
+                width: 2px;
+                height: 80%;
+                position: relative;
+                margin: 0 auto;
+                margin-top: 30px;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 15px;
+                    margin-top: 30px;
+                    margin-left: -6px;
+                }
+            }
+            .green{
+                background-color: green;
+                &::after{
+                background-color: green;
+                }
+            }
+            .blue{
+                background-color: blue;
+                &::after{
+                    background-color: blue;
+                }
+            }
+            .red{
+                background-color: red;
+                &::after{
+                    background-color: red;
+                }
+            }
+            
+            .degree{
+                #degree{
+                    @include caps;
+                    font-weight: bold;
+                    margin-top: 40px;
+                    margin-bottom: 10px;
+                }
+                span{
+                    color: $baseColor;
+                }
+                #description{
+                    margin-top: 20px;
+                }
+
+            }
+        }
+    }
+    .skills{
+        margin-top: 50px;
+        h4{
+            text-align: center;
+            @include caps;
+            font-size: 30px;
+            &::before{
+                content:"";
+                height: 3px;
+                width: 100px;
+                margin-left: 10px;
+                background-color: $baseColor;
+                margin-top: 50px;
+                position: absolute;
+            }
+        }
+        #base{
+            color: $baseColor;
+        }
+        .skill-title{
+            margin-top: 50px;
+            padding: 40px 30px;
+            font-size: 15px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px #dadada, -5px -5px 5px #fafafa;
+            .left-div{
+                height: 50px;
+                @include upper-txt;
+                margin-bottom: 10px;
+                position: relative;
+                &::before,&::after{
+                    content: "";
+                    height: 5px;
+                    position: absolute;
+                    border-radius: 10px;
+                    margin-top: 30px;
+                }
+                &::before{
+                    width: 100%;
+                    background-color: #cecee7;
+                }
+                span{
+                    margin-right: 20%;
+                    position: absolute;
+                }
+                &:first-child{
+                    &::after{
+                        width: 80%;
+                        background-color: #f6527f;
+                        right: 20%;
+                    }
+                    span{
+                        margin-right: 20%;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+                &:nth-child(2){
+                    &::after{
+                        width: 60%;
+                        background-color: #fbdd62;
+                        right: 40%;
+                    }
+                    span{
+                        margin-right: 40%;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+                &:last-child{
+                    &::after{
+                        width: 75%;
+                        background-color: #49ceb0;
+                        right: 25%;
+                    }
+                    span{
+                        margin-right: 25%;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+            .right-div{
+                height: 50px;
+                @include upper-txt;
+                margin-bottom: 10px;
+                position: relative;
+                &::before,&::after{
+                    content: "";
+                    height: 5px;
+                    position: absolute;
+                    border-radius: 10px;
+                    margin-top: 30px;
+                }
+                &::before{
+                    width: 100%;
+                    background-color: #cecee7;
+                }
+                &::after{
+                    width: 80%;
+                    right: 20%;
+                }
+                span{
+                    margin-right: 20%;
+                    position: absolute;
+                }
+                &:first-child{
+                    &::after{
+                        width: 40%;
+                        background-color: #f6527f;
+                        right: 60%;
+                    }
+                    span{
+                        margin-right: 60%;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+                &:nth-child(2){
+                    &::after{
+                        width: 50%;
+                        background-color: #fbdd62;
+                        right: 50%;
+                    }
+                    span{
+                        margin-right: 50%;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+                &:last-child{
+                    &::after{
+                        width: 60%;
+                        background-color: #49ceb0;
+                        right: 40%;
+                    }
+                    span{
+                        margin-right: 40%;
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
