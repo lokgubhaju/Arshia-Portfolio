@@ -1,25 +1,7 @@
 .resume{
     height: 100%;
     margin-top: 100px;
-    .content{   
-        margin-top: 50px;
-        margin-bottom: 50px;
-        text-align: center;
-        .content-wrapper{
-            position: relative;
-            margin-bottom: -40px;
-            z-index: -1;
-            span{
-                color: #e2e4e7;
-                font-weight: bolder;
-                font-size: 55px;
-                @include caps();
-            }
-        }
-        h2{
-            @include caps
-        }
-    }
+    @include content;
     .education{
         h2{
             @include caps;

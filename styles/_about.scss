@@ -4,13 +4,11 @@
 @mixin upper-txt{
     text-transform: uppercase;
 }
-
-.about-me{
-    height: 100vh;
-    text-align: center;
+@mixin content{
     .content{   
         margin-top: 50px;
         margin-bottom: 50px;
+        text-align: center;
         .content-wrapper{
             position: relative;
             margin-bottom: -40px;
@@ -24,8 +22,15 @@
         }
         h2{
             @include caps;
+            color: $baseColor;
         }
     }
+}
+
+.about-me{
+    height: 100vh;
+    text-align: center;
+    @include content;
     #base{
         color: $baseColor;
         font-size: 30px;

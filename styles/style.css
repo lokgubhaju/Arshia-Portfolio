@@ -273,6 +273,7 @@
 .about-me .content {
   margin-top: 50px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .about-me .content .content-wrapper {
@@ -290,6 +291,7 @@
 
 .about-me .content h2 {
   text-transform: capitalize;
+  color: #4ebda6;
 }
 
 .about-me #base {
@@ -407,6 +409,7 @@
 
 .resume .content h2 {
   text-transform: capitalize;
+  color: #4ebda6;
 }
 
 .resume .education h2 {
@@ -652,5 +655,80 @@ body {
 
 .active {
   background: #4ebda6;
+}
+
+.services {
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+.services .content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.services .content .content-wrapper {
+  position: relative;
+  margin-bottom: -40px;
+  z-index: -1;
+}
+
+.services .content .content-wrapper span {
+  color: #e2e4e7;
+  font-weight: bolder;
+  font-size: 55px;
+  text-transform: capitalize;
+}
+
+.services .content h2 {
+  text-transform: capitalize;
+  color: #4ebda6;
+}
+
+.services .services-grid {
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.services .services-grid img {
+  height: 40px;
+  width: 40px;
+  margin: 10px 0;
+}
+
+.services .services-grid h4 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.services .services-grid p {
+  line-height: 25px;
+}
+
+.services .services-grid:hover {
+  margin-top: -10px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+
+.services .col-md-4 {
+  margin-bottom: 30px;
+}
+
+.services .col-md-4:first-child .services-grid, .services .col-md-4:nth-child(5) .services-grid {
+  background-color: #f6527f;
+  color: white;
+}
+
+.services .col-md-4:nth-child(2) .services-grid, .services .col-md-4:nth-child(6) .services-grid {
+  background-color: #fbdd62;
+  color: #6b685f;
+}
+
+.services .col-md-4:nth-child(3) .services-grid, .services .col-md-4:nth-child(4) .services-grid {
+  background-color: #49ceb0;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
