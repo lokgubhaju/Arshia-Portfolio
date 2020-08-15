@@ -1,0 +1,48 @@
+.services{
+    @include content;
+    @include caps;
+    margin-bottom: 50px;
+    .services-grid{
+        text-align: center;
+        border-radius: 20px;
+        padding: 20px;
+        img{
+            height: 40px;
+            width: 40px;
+            margin: 10px 0;
+        }
+        h4{
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        p{
+            line-height: 25px;
+        }
+        &:hover{
+            margin-top: -10px;
+            transition: ease-out 0.3s;
+
+        }
+    }
+    .col-md-4{
+        margin-bottom: 30px;
+    }
+    .col-md-4:first-child,.col-md-4:nth-child(5){
+        .services-grid{
+            background-color: #f6527f;
+            color: white;
+        }
+    }
+    .col-md-4:nth-child(2),.col-md-4:nth-child(6){
+        .services-grid{
+            background-color: #fbdd62;
+            color: #6b685f;
+        }
+    }
+    .col-md-4:nth-child(3),.col-md-4:nth-child(4){
+        .services-grid{
+            background-color: #49ceb0;
+            color: white;
+        }
+    }
+}

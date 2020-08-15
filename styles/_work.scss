@@ -1,0 +1,85 @@
+.my-work{
+    @include content;
+    margin-bottom: 50px;
+    .work-category{
+        @include caps;
+        .button{
+            height: 40px;
+            background-color: #f1f3f6;
+            color: $baseColor;
+            padding: 10px 20px;
+            margin-right: 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow:3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+            &:hover{
+                box-shadow:3px 3px 3px #dadada, -3px -3px 3px #fafafa,
+                inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2),
+                inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
+                transition: ease-in 0.3s;
+            }
+        }
+        .active{
+            box-shadow:3px 3px 3px #dadada, -3px -3px 3px #fafafa,
+            inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2),
+            inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
+            transition: ease-in 0.3s;               
+        }
+    }
+    .work-grid{
+        .col-md-4{
+            margin-top: 30px;
+        }
+        img{
+            border-radius: 20px;
+            border: 5px solid #e6e7f0;
+            box-shadow:5px 5px 5px #dadada, -5px -5px 5px #fafafa;
+        }
+        .grid{
+            position: relative;
+            .icon{
+                position: absolute;
+                width: 80%;
+                height: 80%;
+                top: 10%;
+                left: 10%;
+                border-radius: 20px;
+                background: $baseColor;
+                color: white;
+                visibility: hidden;  
+                a{
+                    text-align: center;
+                    height: 50px;
+                    width: 50px;
+                    text-decoration: none;
+                    color: white;
+                    margin-left: 20px;
+                    background-color: red;
+                    border-radius: 50%;
+                    padding: 10px;
+                    &:last-child{
+                        background-color: blue;
+                    }
+                }                    
+            }
+            .work-title{
+                @include caps;
+                position: absolute;
+                top: 65%;
+                width: 100%;
+                color: black;
+                text-align: center;
+                visibility: hidden;
+            }  
+            &:hover .icon{
+                visibility: visible;
+                transition: 0.5s ease-in-out;
+                opacity: 0.8;
+            }  
+            &:hover .work-title{
+                visibility: visible;
+            }
+        }        
+    }
+}
+      

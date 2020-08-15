@@ -641,22 +641,6 @@
   right: 0;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f1f3f6;
-}
-
-.active {
-  background: #4ebda6;
-}
-
 .services {
   text-transform: capitalize;
   margin-bottom: 50px;
@@ -730,5 +714,143 @@ body {
 .services .col-md-4:nth-child(3) .services-grid, .services .col-md-4:nth-child(4) .services-grid {
   background-color: #49ceb0;
   color: white;
+}
+
+.my-work {
+  margin-bottom: 50px;
+}
+
+.my-work .content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.my-work .content .content-wrapper {
+  position: relative;
+  margin-bottom: -40px;
+  z-index: -1;
+}
+
+.my-work .content .content-wrapper span {
+  color: #e2e4e7;
+  font-weight: bolder;
+  font-size: 55px;
+  text-transform: capitalize;
+}
+
+.my-work .content h2 {
+  text-transform: capitalize;
+  color: #4ebda6;
+}
+
+.my-work .work-category {
+  text-transform: capitalize;
+}
+
+.my-work .work-category .button {
+  height: 40px;
+  background-color: #f1f3f6;
+  color: #4ebda6;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+          box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+}
+
+.my-work .work-category .button:hover {
+  -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa, inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
+          box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa, inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+.my-work .work-category .active {
+  -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa, inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
+          box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa, inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+.my-work .work-grid .col-md-4 {
+  margin-top: 30px;
+}
+
+.my-work .work-grid img {
+  border-radius: 20px;
+  border: 5px solid #e6e7f0;
+  -webkit-box-shadow: 5px 5px 5px #dadada, -5px -5px 5px #fafafa;
+          box-shadow: 5px 5px 5px #dadada, -5px -5px 5px #fafafa;
+}
+
+.my-work .work-grid .grid {
+  position: relative;
+}
+
+.my-work .work-grid .grid .icon {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  border-radius: 20px;
+  background: #4ebda6;
+  color: white;
+  visibility: hidden;
+}
+
+.my-work .work-grid .grid .icon a {
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  background-color: red;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.my-work .work-grid .grid .icon a:last-child {
+  background-color: blue;
+}
+
+.my-work .work-grid .grid .work-title {
+  text-transform: capitalize;
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  color: black;
+  text-align: center;
+  visibility: hidden;
+}
+
+.my-work .work-grid .grid:hover .icon {
+  visibility: visible;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0.8;
+}
+
+.my-work .work-grid .grid:hover .work-title {
+  visibility: visible;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f1f3f6;
+}
+
+.active {
+  background: #4ebda6;
 }
 /*# sourceMappingURL=style.css.map */
