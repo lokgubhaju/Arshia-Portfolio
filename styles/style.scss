@@ -7,6 +7,7 @@
 @import "resume";
 @import "services";
 @import "work";
+@import "testimonial";
 *{
     margin: 0;
     padding: 0;
@@ -19,5 +20,3 @@ body{
 .active{
     background: $baseColor;
 }
-  
-

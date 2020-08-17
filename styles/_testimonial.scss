@@ -1,0 +1,37 @@
+@include content;
+.testimonial{
+    @include caps;
+    margin-bottom: 50px;
+    .testimonial-grid{
+        background: white;
+        height: 100%;
+        padding: 30px;
+        border-radius: 20px;
+        img{
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            margin-top: -70px;
+            margin-bottom: 20px;    
+            border: 7px solid white;
+        }
+    }
+    .slider-line{
+        margin-top: 50px;
+        width: 100%;
+        .line{
+            height: 5px;
+            width: 25px;
+            border-radius: 10px;
+            background: grey;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .active{
+            width: 30px;
+            background: $baseColor;
+        }
+    }
+}
+
