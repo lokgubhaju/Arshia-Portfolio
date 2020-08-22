@@ -1,0 +1,53 @@
+.news {
+    width: 80%;
+    margin: 0 auto;
+    .news-grid {
+      padding: 20px 30px;
+      border-radius: 20px;
+      background-color: #f1f3f6;
+      height: 100%;
+      margin-bottom: 50px;
+      box-shadow:3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+      .news-img {
+        margin-bottom: 30px;
+        img {
+          top: -200px;
+          display: block;
+          width: 90%;
+          margin: auto;
+          border-radius: 20px;
+          padding: 10px;
+        }
+      }
+      .news-title {
+        p {
+          @include caps;
+          margin-right: 4rem;
+          i {
+            color: red;
+          }
+        }
+        span {
+          i {
+            color: blue;
+          }
+        }
+      }
+      p {
+        margin: 0;
+      }
+      .title {
+        margin: 10px 0;
+        font-weight: bold;
+        @include caps;
+      }
+      a {
+        text-decoration: none;
+        color: $baseColor;
+        p{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  

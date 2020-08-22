@@ -903,6 +903,66 @@
   background: #4ebda6;
 }
 
+.news {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.news .news-grid {
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: #f1f3f6;
+  height: 100%;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+          box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+}
+
+.news .news-grid .news-img {
+  margin-bottom: 30px;
+}
+
+.news .news-grid .news-img img {
+  top: -200px;
+  display: block;
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.news .news-grid .news-title p {
+  text-transform: capitalize;
+  margin-right: 4rem;
+}
+
+.news .news-grid .news-title p i {
+  color: red;
+}
+
+.news .news-grid .news-title span i {
+  color: blue;
+}
+
+.news .news-grid p {
+  margin: 0;
+}
+
+.news .news-grid .title {
+  margin: 10px 0;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.news .news-grid a {
+  text-decoration: none;
+  color: #4ebda6;
+}
+
+.news .news-grid a p {
+  margin-top: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -911,11 +971,12 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #f1f3f6;
 }
 
 .active {
+  color: red;
   background: #4ebda6;
 }
 /*# sourceMappingURL=style.css.map */

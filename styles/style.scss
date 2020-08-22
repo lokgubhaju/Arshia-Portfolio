@@ -8,15 +8,17 @@
 @import "services";
 @import "work";
 @import "testimonial";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import "news";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    background-color:#f1f3f6;
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f3f6;
 }
-.active{
-    background: $baseColor;
+.active {
+  color: red;
+  background: $baseColor;
 }
