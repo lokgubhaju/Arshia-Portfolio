@@ -964,23 +964,6 @@
   text-transform: capitalize;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #f1f3f6;
-}
-
-.active {
-  color: red;
-  background: #4ebda6;
-}
-
 .contact {
   margin-top: 50px;
 }
@@ -1023,7 +1006,8 @@ body {
   text-transform: capitalize;
 }
 
-.contact .contact-form form .name, .contact .contact-form form .email {
+.contact .contact-form form .name,
+.contact .contact-form form .email {
   border-radius: 15px;
   width: 40%;
   height: 40px;
@@ -1050,6 +1034,18 @@ body {
   margin-top: 20px;
   padding: 15px 30px;
   border-radius: 15px;
+  background-color: white;
+  border: none;
+  -webkit-box-shadow: 10px 10px 10px #dadada, -10px -10px 10px #fafafa;
+          box-shadow: 10px 10px 10px #dadada, -10px -10px 10px #fafafa;
+  text-transform: capitalize;
+}
+
+.contact .contact-form form .button:hover {
+  -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa, inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
+          box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa, inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
 }
 
 .footer {
@@ -1066,5 +1062,22 @@ body {
 .footer a {
   text-decoration: none;
   color: #4ebda6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f3f6;
+}
+
+.active {
+  color: red;
+  background: #4ebda6;
 }
 /*# sourceMappingURL=style.css.map */

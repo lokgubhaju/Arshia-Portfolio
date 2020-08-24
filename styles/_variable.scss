@@ -1,2 +1,39 @@
-$primaryColor:#212529;
+$primaryColor: #212529;
 $baseColor: #4ebda6;
+@mixin shadow {
+  &:hover {
+    box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa,
+      inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2),
+      inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
+    transition: ease-in 0.3s;
+  }
+}
+@mixin caps {
+  text-transform: capitalize;
+}
+@mixin upper-txt {
+  text-transform: uppercase;
+}
+
+@mixin content {
+  .content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    .content-wrapper {
+      position: relative;
+      margin-bottom: -40px;
+      z-index: -1;
+      span {
+        color: #e2e4e7;
+        font-weight: bolder;
+        font-size: 55px;
+        @include caps();
+      }
+    }
+    h2 {
+      @include caps;
+      color: $baseColor;
+    }
+  }
+}

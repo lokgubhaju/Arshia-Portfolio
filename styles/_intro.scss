@@ -1,83 +1,75 @@
-
-.intro{
-    height: 100vh;
-    .intro-text{
-        h4{
-            margin: 20px auto;
-            #primary{
-                text-transform: capitalize;
-            }
-        }
-        p{
-            color: #949ba1;
-        }
-        #primary{
-            color: $primaryColor;
-            text-transform: uppercase;
-        }
-        #base{
-            color: $baseColor;
-            text-transform: capitalize;
-        }
-        .cv{
-            margin-top: 40px;
-            text-transform: capitalize;            
-            a{
-                color: $baseColor;
-                background-color: white;
-                border-radius: 15px;
-                padding: 15px 25px;
-                text-decoration: none;
-                box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
-                &:hover{
-                    box-shadow:3px 3px 3px #dadada, -3px -3px 3px #fafafa,
-                     inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2),
-                    inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
-                    transition: ease-in 0.3s;
-                }
-                
-            }
-        }
+.intro {
+  height: 100vh;
+  .intro-text {
+    h4 {
+      margin: 20px auto;
+      #primary {
+        text-transform: capitalize;
+      }
     }
-    .hero-img{
-        position: relative;
-        .profile{
-            img{
-                width: 80%;
-                height: 80%;
-                margin-top: 12.5%;
-                align-items: center;
-                border-radius: 50%;
-                box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
-                z-index: 11;
-            }
-        }
-        .square{
-            position: absolute;
-            bottom: 20px;
-            animation: rotate 25s cubic-bezier(0, 1.03, 1, 1) infinite;
-            animation-duration: 25s;
-            animation-timing-function: cubic-bezier(0, 1.03, 1, 1);
-            animation-delay: 0s;
-            animation-iteration-count: infinite;
-            animation-direction: normal;
-            animation-fill-mode: none;
-            animation-play-state: running;
-            animation-name: rotate;;
-        }
-        .square1{
-            width: 85px;
-            height: 85px;
-            background: #1ab394;
-            border-radius: 50%;
-            opacity: 0.9;
-            position: absolute;
-            top: 150px;
-            right: 34px;
-            overflow: hidden;
-            animation: circling 18s linear infinite;
-            z-index: 11;
-        }
+    p {
+      color: #949ba1;
     }
-
+    #primary {
+      color: $primaryColor;
+      text-transform: uppercase;
+    }
+    #base {
+      color: $baseColor;
+      text-transform: capitalize;
+    }
+    .cv {
+      margin-top: 40px;
+      text-transform: capitalize;
+      a {
+        color: $baseColor;
+        background-color: white;
+        border-radius: 15px;
+        padding: 15px 25px;
+        text-decoration: none;
+        box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+        @include shadow;
+      }
+    }
+  }
+  .hero-img {
+    position: relative;
+    .profile {
+      img {
+        width: 80%;
+        height: 80%;
+        margin-top: 12.5%;
+        align-items: center;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+        z-index: 11;
+      }
+    }
+    .square {
+      position: absolute;
+      bottom: 20px;
+      animation: rotate 25s cubic-bezier(0, 1.03, 1, 1) infinite;
+      animation-duration: 25s;
+      animation-timing-function: cubic-bezier(0, 1.03, 1, 1);
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-fill-mode: none;
+      animation-play-state: running;
+      animation-name: rotate;
+    }
+    .square1 {
+      width: 85px;
+      height: 85px;
+      background: #1ab394;
+      border-radius: 50%;
+      opacity: 0.9;
+      position: absolute;
+      top: 150px;
+      right: 34px;
+      overflow: hidden;
+      animation: circling 18s linear infinite;
+      z-index: 11;
+    }
+  }
 }

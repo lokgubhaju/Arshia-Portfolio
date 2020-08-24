@@ -1,108 +1,77 @@
-@mixin caps{
-    text-transform: capitalize;
-}
-@mixin upper-txt{
-    text-transform: uppercase;
-}
-@mixin content{
-    .content{   
-        margin-top: 50px;
-        margin-bottom: 50px;
-        text-align: center;
-        .content-wrapper{
-            position: relative;
-            margin-bottom: -40px;
-            z-index: -1;
-            span{
-                color: #e2e4e7;
-                font-weight: bolder;
-                font-size: 55px;
-                @include caps();
-            }
-        }
-        h2{
-            @include caps;
-            color: $baseColor;
-        }
+.about-me {
+  height: 100vh;
+  text-align: center;
+  @include content;
+  #base {
+    color: $baseColor;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .about-img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    img {
+      border-radius: 15px;
+      border: 5px solid white;
+      box-shadow: 10px 10px 10px #dadada, -10px -10px 10px #fafafa;
     }
-}
-
-.about-me{
-    height: 100vh;
-    text-align: center;
-    @include content;
-    #base{
-        color: $baseColor;
-        font-size: 30px;
-        font-weight: bold;
+  }
+  .about-detail {
+    margin-left: 20px;
+    @include caps;
+    #base {
+      @include upper-txt;
     }
-    .about-img{
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        
-        img{
-            border-radius: 15px;
-            border: 5px solid white;
-            box-shadow: 10px 10px 10px #dadada, -10px -10px 10px #fafafa;
-        }
+    h2 {
+      text-align: left;
+      margin-bottom: 30px;
     }
-    .about-detail{
-        margin-left: 20px;
-        @include caps;
-        #base{
-            @include upper-txt;
-        }
-        h2{
-            text-align: left;
-            margin-bottom: 30px;
-        }
-        b{
-            width: 100px;
-            display: inline-block;
-            border-right: 1px solid black;
-            margin-right: 20px;
-        }
-        p{
-            font-size: 15px;
-            text-align: left;
-        }        
+    b {
+      width: 100px;
+      display: inline-block;
+      border-right: 1px solid black;
+      margin-right: 20px;
     }
-    .cv{
-        @include caps;
-        margin-right: 20px;
-        margin-top: 30px;            
-        a{
-            color: $baseColor;
-            background-color: white;
-            border-radius: 15px;
-            padding: 15px 25px;
-            text-decoration: none;
-            box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
-            &:hover{
-                box-shadow:3px 3px 3px #dadada, -3px -3px 3px #fafafa,
-                inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2),
-                inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
-                transition: ease-in 0.3s;
-            }
-            
-        }
+    p {
+      font-size: 15px;
+      text-align: left;
     }
-    .activities{
-        margin-top: 50px;
-        margin-bottom: 20px;
-        border-radius: 15px;
-        padding-top: 20px;
-        padding-bottom: 30px;
-        box-shadow: 10px 10px 10px #dadada, -10px -10px 10px #fafafa;
-        @include caps;
-        img{
-            height: 50px;
-            width: 50px;
-            margin: 20px auto;
-        }
-        h2{
-            margin-bottom: 30px;
-        }
+  }
+  .cv {
+    @include caps;
+    margin-right: 20px;
+    margin-top: 30px;
+    a {
+      color: $baseColor;
+      background-color: white;
+      border-radius: 15px;
+      padding: 15px 25px;
+      text-decoration: none;
+      box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+      &:hover {
+        box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa,
+          inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2),
+          inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
+        transition: ease-in 0.3s;
+      }
     }
+  }
+  .activities {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: 10px 10px 10px #dadada, -10px -10px 10px #fafafa;
+    @include caps;
+    img {
+      height: 50px;
+      width: 50px;
+      margin: 20px auto;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
 }

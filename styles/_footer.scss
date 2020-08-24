@@ -1,0 +1,13 @@
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+    @include caps;
+    i{
+      color: $baseColor;
+    }
+    a{
+      text-decoration: none;
+      color: $baseColor;
+    }
+  }
