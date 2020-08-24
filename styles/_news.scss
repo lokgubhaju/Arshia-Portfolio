@@ -46,6 +46,7 @@
         color: $baseColor;
         p{
           margin-top: 20px;
+          @include caps;
         }
       }
     }

@@ -961,6 +961,7 @@
 
 .news .news-grid a p {
   margin-top: 20px;
+  text-transform: capitalize;
 }
 
 * {
@@ -978,5 +979,92 @@ body {
 .active {
   color: red;
   background: #4ebda6;
+}
+
+.contact {
+  margin-top: 50px;
+}
+
+.contact .office-details img {
+  width: 50px;
+  height: 50px;
+}
+
+.contact .office-details p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.contact .office-details span {
+  font-size: 15px;
+  color: #8c939a;
+}
+
+.contact .contact-form {
+  margin-top: 50px;
+}
+
+.contact .contact-form form ::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+.contact .contact-form form :-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.contact .contact-form form ::-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.contact .contact-form form ::placeholder {
+  text-transform: capitalize;
+}
+
+.contact .contact-form form .name, .contact .contact-form form .email {
+  border-radius: 15px;
+  width: 40%;
+  height: 40px;
+  outline: none;
+}
+
+.contact .contact-form form .subject {
+  border-radius: 15px;
+  width: 90%;
+  height: 40px;
+  margin: 20px 0;
+  outline: none;
+}
+
+.contact .contact-form form .message {
+  width: 100%;
+  outline: none;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.contact .contact-form form .button {
+  outline: none;
+  margin-top: 20px;
+  padding: 15px 30px;
+  border-radius: 15px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  color: black;
+  text-transform: capitalize;
+}
+
+.footer i {
+  color: #4ebda6;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #4ebda6;
 }
 /*# sourceMappingURL=style.css.map */
