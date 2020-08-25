@@ -315,7 +315,6 @@
 
 .about-me .about-detail {
   margin-left: 20px;
-  text-transform: capitalize;
 }
 
 .about-me .about-detail #base {
@@ -328,6 +327,7 @@
 }
 
 .about-me .about-detail b {
+  text-transform: capitalize;
   width: 100px;
   display: inline-block;
   border-right: 1px solid black;
@@ -479,6 +479,10 @@
 
 .resume .education .timeline .degree #description {
   margin-top: 20px;
+}
+
+.resume .education .timeline .degree .upper {
+  text-transform: uppercase;
 }
 
 .resume .skills {
@@ -968,6 +972,10 @@
   margin-top: 50px;
 }
 
+.contact .office-details {
+  margin-bottom: 70px;
+}
+
 .contact .office-details img {
   width: 50px;
   height: 50px;
@@ -988,45 +996,51 @@
 
 .contact .contact-form {
   margin-top: 50px;
+  width: 70%;
+  margin-top: 100px;
+  margin: auto;
 }
 
 .contact .contact-form form ::-webkit-input-placeholder {
   text-transform: capitalize;
+  font-size: 15px;
+  padding-left: 20px;
 }
 
 .contact .contact-form form :-ms-input-placeholder {
   text-transform: capitalize;
+  font-size: 15px;
+  padding-left: 20px;
 }
 
 .contact .contact-form form ::-ms-input-placeholder {
   text-transform: capitalize;
+  font-size: 15px;
+  padding-left: 20px;
 }
 
 .contact .contact-form form ::placeholder {
   text-transform: capitalize;
+  font-size: 15px;
+  padding-left: 20px;
 }
 
 .contact .contact-form form .name,
-.contact .contact-form form .email {
+.contact .contact-form form .email, .contact .contact-form form .subject, .contact .contact-form form .message {
   border-radius: 15px;
-  width: 40%;
+  width: 100%;
   height: 40px;
+  padding: 15px;
   outline: none;
+  border: 1px solid black;
 }
 
 .contact .contact-form form .subject {
-  border-radius: 15px;
-  width: 90%;
-  height: 40px;
   margin: 20px 0;
-  outline: none;
 }
 
 .contact .contact-form form .message {
-  width: 100%;
-  outline: none;
   height: 200px;
-  border-radius: 15px;
 }
 
 .contact .contact-form form .button {

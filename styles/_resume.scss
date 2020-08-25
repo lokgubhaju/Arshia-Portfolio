@@ -59,7 +59,9 @@
                 #description{
                     margin-top: 20px;
                 }
-
+                .upper{
+                    @include upper-txt;
+                }
             }
         }
     }

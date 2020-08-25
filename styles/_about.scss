@@ -19,7 +19,6 @@
   }
   .about-detail {
     margin-left: 20px;
-    @include caps;
     #base {
       @include upper-txt;
     }
@@ -28,6 +27,7 @@
       margin-bottom: 30px;
     }
     b {
+      @include caps;
       width: 100px;
       display: inline-block;
       border-right: 1px solid black;
