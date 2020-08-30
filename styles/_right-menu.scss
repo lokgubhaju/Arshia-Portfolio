@@ -6,11 +6,16 @@
     .navigation{
         width: 35px;
         height:4px;
-        margin-bottom:20px ;
+        margin-bottom:15px ;
         background: $primaryColor;
         cursor: pointer;    
+        position: relative;    
+        
         &:hover{
-            background: $baseColor
+            background: $baseColor;
+            width: 50px;
+            right: 7px;
+            transition: 0.1s ease-in;
         }
         &:nth-child(2):hover{
             &::before{
@@ -18,19 +23,20 @@
             position: absolute;
             font-size: 12px;
             margin-top: -5px;
-            margin-right: 20px;
+            right: 70px;
             justify-content: center;
             text-transform: uppercase;
             color: $baseColor;
             }
         }
         &:nth-child(3):hover{
+            
             &::before{
             content: "resume";
             position: absolute;
             font-size: 12px;
             margin-top: -5px;
-            right: 70px;
+            right: 80px;
             color: $baseColor;
             text-transform: uppercase;
             }
@@ -62,7 +68,7 @@
             content: "client";
             position: absolute;
             font-size: 12px;
-            right: 55px;
+            right: 70px;
             margin-top: -5px;
             color: $baseColor;
             text-transform: uppercase;
@@ -73,7 +79,7 @@
             content: "blog";
             position: absolute;
             font-size: 12px;
-            right: 50px;
+            right: 70px;
             margin-top: -5px;
             color: $baseColor;
             text-transform: uppercase;

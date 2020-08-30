@@ -1,5 +1,4 @@
 .navbar {
-  background: #c5c7c5;
   height: 50px;
   width: 100%;
 }
@@ -80,13 +79,18 @@
 .right-menu .navigation {
   width: 35px;
   height: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   background: #212529;
   cursor: pointer;
+  position: relative;
 }
 
 .right-menu .navigation:hover {
   background: #4ebda6;
+  width: 50px;
+  right: 7px;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
 }
 
 .right-menu .navigation:nth-child(2):hover::before {
@@ -94,7 +98,7 @@
   position: absolute;
   font-size: 12px;
   margin-top: -5px;
-  margin-right: 20px;
+  right: 70px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -107,7 +111,7 @@
   position: absolute;
   font-size: 12px;
   margin-top: -5px;
-  right: 70px;
+  right: 80px;
   color: #4ebda6;
   text-transform: uppercase;
 }
@@ -136,7 +140,7 @@
   content: "client";
   position: absolute;
   font-size: 12px;
-  right: 55px;
+  right: 70px;
   margin-top: -5px;
   color: #4ebda6;
   text-transform: uppercase;
@@ -146,7 +150,7 @@
   content: "blog";
   position: absolute;
   font-size: 12px;
-  right: 50px;
+  right: 70px;
   margin-top: -5px;
   color: #4ebda6;
   text-transform: uppercase;
