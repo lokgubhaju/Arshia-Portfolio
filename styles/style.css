@@ -234,27 +234,15 @@
 .intro .hero-img .square {
   position: absolute;
   bottom: 20px;
-  -webkit-animation: rotate 25s cubic-bezier(0, 1.03, 1, 1) infinite;
-          animation: rotate 25s cubic-bezier(0, 1.03, 1, 1) infinite;
-  -webkit-animation-duration: 25s;
-          animation-duration: 25s;
-  -webkit-animation-timing-function: cubic-bezier(0, 1.03, 1, 1);
-          animation-timing-function: cubic-bezier(0, 1.03, 1, 1);
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  -webkit-animation: rotate 5s linear;
+          animation: rotate 5s linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
   -webkit-animation-play-state: running;
           animation-play-state: running;
-  -webkit-animation-name: rotate;
-          animation-name: rotate;
 }
 
-.intro .hero-img .square1 {
+.intro .hero-img .circle {
   width: 85px;
   height: 85px;
   background: #1ab394;
@@ -264,9 +252,31 @@
   top: 150px;
   right: 34px;
   overflow: hidden;
-  -webkit-animation: circling 18s linear infinite;
-          animation: circling 18s linear infinite;
+  -webkit-animation: floating 18s linear infinite;
+          animation: floating 18s linear infinite;
   z-index: 11;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .about-me {

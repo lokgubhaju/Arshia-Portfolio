@@ -45,20 +45,15 @@
         z-index: 11;
       }
     }
+
     .square {
       position: absolute;
       bottom: 20px;
-      animation: rotate 25s cubic-bezier(0, 1.03, 1, 1) infinite;
-      animation-duration: 25s;
-      animation-timing-function: cubic-bezier(0, 1.03, 1, 1);
-      animation-delay: 0s;
+      animation: rotate 5s linear;
       animation-iteration-count: infinite;
-      animation-direction: normal;
-      animation-fill-mode: none;
       animation-play-state: running;
-      animation-name: rotate;
     }
-    .square1 {
+    .circle {
       width: 85px;
       height: 85px;
       background: #1ab394;
@@ -66,10 +61,17 @@
       opacity: 0.9;
       position: absolute;
       top: 150px;
-      right: 34px;
-      overflow: hidden;
-      animation: circling 18s linear infinite;
+      right: 34px;overflow: hidden;
+      animation: floating 18s linear infinite;
       z-index: 11;
     }
+  }
+}
+@keyframes rotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
   }
 }
