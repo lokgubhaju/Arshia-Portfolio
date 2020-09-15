@@ -17,6 +17,9 @@
       font-size: 15px;
       color: #8c939a;
     }
+    iframe{
+      margin-bottom: 50px;
+    }
   }
   .contact-form {
     margin-top: 50px;
@@ -35,8 +38,9 @@
         width: 100%;
         height: 40px;
         padding: 15px ;
-        outline: none;
-        border: 1px solid black;
+        outline: none;  
+        border: none;
+        box-shadow: inset 2px 2px 2px #dadada, -2px -2px 2px #fafafa;
       }
       .subject{
           margin: 20px 0;
@@ -50,6 +54,7 @@
         padding: 15px 30px;
         border-radius: 15px;
         background-color: white;
+        color: $baseColor;
         border: none;
         box-shadow: 10px 10px 10px #dadada, -10px -10px 10px #fafafa;
         @include shadow;

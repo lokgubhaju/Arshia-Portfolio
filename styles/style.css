@@ -995,6 +995,10 @@
   color: #8c939a;
 }
 
+.contact .office-details iframe {
+  margin-bottom: 50px;
+}
+
 .contact .contact-form {
   margin-top: 50px;
   width: 70%;
@@ -1033,7 +1037,9 @@
   height: 40px;
   padding: 15px;
   outline: none;
-  border: 1px solid black;
+  border: none;
+  -webkit-box-shadow: inset 2px 2px 2px #dadada, -2px -2px 2px #fafafa;
+          box-shadow: inset 2px 2px 2px #dadada, -2px -2px 2px #fafafa;
 }
 
 .contact .contact-form form .subject {
@@ -1050,6 +1056,7 @@
   padding: 15px 30px;
   border-radius: 15px;
   background-color: white;
+  color: #4ebda6;
   border: none;
   -webkit-box-shadow: 10px 10px 10px #dadada, -10px -10px 10px #fafafa;
           box-shadow: 10px 10px 10px #dadada, -10px -10px 10px #fafafa;
