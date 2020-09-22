@@ -58,20 +58,28 @@
       height: 85px;
       background: #1ab394;
       border-radius: 50%;
-      opacity: 0.9;
-      position: absolute;
+    position: absolute;
       top: 150px;
-      right: 34px;overflow: hidden;
-      animation: floating 18s linear infinite;
+      right: 34px;
+      animation: rotate 4s linear;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
       z-index: 11;
     }
   }
 }
-@keyframes rotate{
+@keyframes square{
   from{
     transform: rotate(0deg);
   }
   to{
+    transform: rotate(360deg);
+  }
+}
+@keyframes circle{
+  from{
+    transform: rotate(10deg);
+  } to {
     transform: rotate(360deg);
   }
 }

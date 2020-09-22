@@ -247,17 +247,19 @@
   height: 85px;
   background: #1ab394;
   border-radius: 50%;
-  opacity: 0.9;
   position: absolute;
   top: 150px;
   right: 34px;
-  overflow: hidden;
-  -webkit-animation: floating 18s linear infinite;
-          animation: floating 18s linear infinite;
+  -webkit-animation: rotate 4s linear;
+          animation: rotate 4s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
   z-index: 11;
 }
 
-@-webkit-keyframes rotate {
+@-webkit-keyframes square {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -268,10 +270,32 @@
   }
 }
 
-@keyframes rotate {
+@keyframes square {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes circle {
+  from {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  from {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
   to {
     -webkit-transform: rotate(360deg);
