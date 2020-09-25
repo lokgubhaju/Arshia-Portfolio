@@ -76,7 +76,7 @@
   right: 0;
 }
 
-.right-menu .navigation {
+.right-menu a {
   width: 35px;
   height: 4px;
   margin-bottom: 15px;
@@ -85,7 +85,7 @@
   position: relative;
 }
 
-.right-menu .navigation:hover {
+.right-menu a:hover {
   background: #4ebda6;
   width: 50px;
   right: 7px;
@@ -93,7 +93,7 @@
   transition: 0.1s ease-in;
 }
 
-.right-menu .navigation:nth-child(2):hover::before {
+.right-menu a:nth-child(2):hover::before {
   content: "about me";
   position: absolute;
   font-size: 12px;
@@ -106,7 +106,7 @@
   color: #4ebda6;
 }
 
-.right-menu .navigation:nth-child(3):hover::before {
+.right-menu a:nth-child(3):hover::before {
   content: "resume";
   position: absolute;
   font-size: 12px;
@@ -116,7 +116,7 @@
   text-transform: uppercase;
 }
 
-.right-menu .navigation:nth-child(4):hover::before {
+.right-menu a:nth-child(4):hover::before {
   content: "services";
   position: absolute;
   font-size: 12px;
@@ -126,7 +126,7 @@
   text-transform: uppercase;
 }
 
-.right-menu .navigation:nth-child(5):hover::before {
+.right-menu a:nth-child(5):hover::before {
   content: "portfolio";
   position: absolute;
   font-size: 12px;
@@ -136,7 +136,7 @@
   text-transform: uppercase;
 }
 
-.right-menu .navigation:nth-child(6):hover::before {
+.right-menu a:nth-child(6):hover::before {
   content: "client";
   position: absolute;
   font-size: 12px;
@@ -146,8 +146,8 @@
   text-transform: uppercase;
 }
 
-.right-menu .navigation:nth-child(7):hover::before {
-  content: "blog";
+.right-menu a:nth-child(7):hover::before {
+  content: "news";
   position: absolute;
   font-size: 12px;
   right: 70px;
@@ -156,7 +156,7 @@
   text-transform: uppercase;
 }
 
-.right-menu .navigation:last-child:hover::before {
+.right-menu a:last-child:hover::before {
   content: "Contact";
   position: absolute;
   font-size: 12px;

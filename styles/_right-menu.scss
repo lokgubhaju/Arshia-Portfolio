@@ -3,7 +3,7 @@
     width: 100px;
     height: 100%;
     right: 0;
-    .navigation{
+    a{
         width: 35px;
         height:4px;
         margin-bottom:15px ;
@@ -76,7 +76,7 @@
         }
         &:nth-child(7):hover{
             &::before{
-            content: "blog";
+            content: "news";
             position: absolute;
             font-size: 12px;
             right: 70px;
