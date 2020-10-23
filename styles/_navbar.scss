@@ -1,37 +1,81 @@
-.navbar{
-    height: 50px;
-    width: 100%;
-    .logo{
-        span{
-            #primary{
-                color: $baseColor;
-                }
-            
-            letter-spacing: 2px;
-            font-size: 25px;
-            font-weight: 200;
-        }
-    }   
-    .hamburger-menu{
-        position: relative;
-        background: $primaryColor;
-        .line{
-            height: 2px;
-            width: 35px;
-            &::before,&::after{
-                position: absolute;
-                content: '';
-                background: $primaryColor;
-                height: 2px;
-                width: 35px;
-                display: block;
-            }
-            &::after{
-                top: 8px;
-            }
-            &::before{
-                top: -8px;
-            }
-        }
+.navbar {
+  height: 50px;
+  width: 100%;
+  .logo {
+    span {
+      #primary {
+        color: $baseColor;
+      }
+
+      letter-spacing: 2px;
+      font-size: 25px;
+      font-weight: 200;
     }
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+    width: 100%;
+    top: 8vh;
+    position: absolute;
+    background-color: cadetblue;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+    display: none;
+
+    li {
+      list-style: none;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  .nav-menu{
+      width: 100%;
+  }
+  #nav{
+      display: none;
+  }
+  .hamburger-menu {
+    // position: relative;
+    // cursor: pointer;
+
+    // .line {
+    //   height: 2px;
+    //   width: 35px;
+    //   background: $primaryColor;
+    //   &::before,
+    //   &::after {
+    //     position: absolute;
+    //     content: "";
+    //     background: $primaryColor;
+    //     height: 2px;
+    //     width: 35px;
+    //     display: block;
+    //   }
+    //   &::after {
+    //     top: 8px;
+    //   }
+    //   &::before {
+    //     bottom: 8px;
+    //   }
+    // }
+    display: block;
+    cursor: pointer;
+    div {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 5px;
+    }
+  }
+}
+.nav-active{
+    transform: translateX(0%);
 }

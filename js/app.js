@@ -1,0 +1,45 @@
+function createRipple(event) {
+  const button = event.currentTarget;
+
+  const circle = document.createElement("span");
+  const diameter = Math.max(button.clientWidth, button.clientHeight);
+  const radius = diameter / 2;
+
+  circle.style.width = circle.style.height = `${diameter}px`;
+  circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
+  circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
+  circle.classList.add("ripple");
+
+  const ripple = button.getElementsByClassName("ripple")[0];
+
+  if (ripple) {
+    ripple.remove();
+  }
+
+  button.appendChild(circle);
+}
+
+const buttons = document.getElementsByTagName("button");
+for (const button of buttons) {
+  button.addEventListener("click", createRipple);
+}
+
+const nav = () => {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const nav = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+    });
+}
+nav();
+
+function myFunction(){
+    var x = document.getElementById("nav");
+    if(x.style.display === "block"){
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  myFunction();

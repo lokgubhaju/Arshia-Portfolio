@@ -13,31 +13,63 @@
   color: #4ebda6;
 }
 
-.navbar .hamburger-menu {
-  position: relative;
-  background: #212529;
-}
-
-.navbar .hamburger-menu .line {
-  height: 2px;
-  width: 35px;
-}
-
-.navbar .hamburger-menu .line::before, .navbar .hamburger-menu .line::after {
+.navbar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 92vh;
+  width: 100%;
+  top: 8vh;
   position: absolute;
-  content: '';
-  background: #212529;
-  height: 2px;
-  width: 35px;
+  background-color: cadetblue;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 2;
+  display: none;
+}
+
+.navbar .nav-links li {
+  list-style: none;
+}
+
+.navbar .nav-links a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar .nav-menu {
+  width: 100%;
+}
+
+.navbar #nav {
+  display: none;
+}
+
+.navbar .hamburger-menu {
   display: block;
+  cursor: pointer;
 }
 
-.navbar .hamburger-menu .line::after {
-  top: 8px;
+.navbar .hamburger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
 }
 
-.navbar .hamburger-menu .line::before {
-  top: -8px;
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 .left-menu {
@@ -192,26 +224,24 @@
   text-transform: capitalize;
 }
 
-.intro .intro-text .cv {
-  margin-top: 40px;
+.intro .intro-text button {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: background 400ms;
+  transition: background 400ms;
+  color: #fff;
+  background-color: #4ebda6;
+  padding: 1rem 2rem;
+  height: 50px;
+  font-size: 1rem;
+  outline: 0;
+  border: 0;
   text-transform: capitalize;
-}
-
-.intro .intro-text .cv a {
-  color: #4ebda6;
-  background-color: white;
-  border-radius: 15px;
-  padding: 15px 25px;
-  text-decoration: none;
-  -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
-          box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
-}
-
-.intro .intro-text .cv a:hover {
-  -webkit-box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa, inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
-          box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa, inset 3px 3px 3px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 3px 0 rgba(255, 255, 255, 0.5);
-  -webkit-transition: ease-in 0.3s;
-  transition: ease-in 0.3s;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  /* black with 30% opacity */
+  cursor: pointer;
 }
 
 .intro .hero-img {
@@ -242,7 +272,7 @@
           animation-play-state: running;
 }
 
-.intro .hero-img .circle {
+.intro .hero-img .circle-1 {
   width: 85px;
   height: 85px;
   background: #1ab394;
@@ -281,7 +311,7 @@
   }
 }
 
-@-webkit-keyframes circle {
+@-webkit-keyframes circle-1 {
   from {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg);
@@ -292,7 +322,7 @@
   }
 }
 
-@keyframes circle {
+@keyframes circle-1 {
   from {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg);
@@ -300,6 +330,32 @@
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: ripple 500ms linear;
+          animation: ripple 500ms linear;
+  background-color: rgba(250, 245, 245, 0.7);
+}
+
+@-webkit-keyframes ripple {
+  to {
+    -webkit-transform: scale(5);
+            transform: scale(5);
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  to {
+    -webkit-transform: scale(5);
+            transform: scale(5);
+    opacity: 0;
   }
 }
 
