@@ -21,18 +21,18 @@
     button {
       position: relative;
       overflow: hidden;
-    transition: background 400ms;
-    color: #fff;
-    background-color: $baseColor;
-    padding: 1rem 2rem;
-    height: 50px;
-    font-size: 1rem;
-    outline: 0;
-    border: 0;
-    text-transform: capitalize;
-    border-radius: 0.25rem;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); /* black with 30% opacity */
-    cursor: pointer;
+      transition: background 400ms;
+      color: #fff;
+      background-color: $baseColor;
+      padding: 1rem 2rem;
+      height: 50px;
+      font-size: 1rem;
+      outline: 0;
+      border: 0;
+      text-transform: capitalize;
+      border-radius: 0.25rem;
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); /* black with 30% opacity */
+      cursor: pointer;
     }
   }
   .hero-img {
@@ -52,10 +52,10 @@
     .square {
       position: absolute;
       bottom: 20px;
-      animation: rotate 5s linear;
-      animation-iteration-count: infinite;
-      animation-play-state: running;
+      animation: roll 5s infinite;
+      transform: rotate(20deg);
     }
+
     .circle-1 {
       width: 85px;
       height: 85px;
@@ -64,9 +64,8 @@
       position: absolute;
       top: 150px;
       right: 34px;
-      animation: rotate 4s linear;
-      animation-iteration-count: infinite;
-      animation-play-state: running;
+      animation: roll 5s infinite;
+      transform: rotate(360deg);
       z-index: 11;
     }
   }
@@ -83,6 +82,14 @@
   from{
     transform: rotate(10deg);
   } to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
     transform: rotate(360deg);
   }
 }

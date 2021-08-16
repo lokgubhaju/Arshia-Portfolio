@@ -47,10 +47,6 @@
   font-size: 20px;
 }
 
-.navbar .nav-menu {
-  width: 100%;
-}
-
 .navbar #nav {
   display: none;
 }
@@ -106,6 +102,7 @@
   width: 100px;
   height: 100%;
   right: 0;
+  z-index: 1111;
 }
 
 .right-menu a {
@@ -264,12 +261,10 @@
 .intro .hero-img .square {
   position: absolute;
   bottom: 20px;
-  -webkit-animation: rotate 5s linear;
-          animation: rotate 5s linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
+  -webkit-animation: roll 5s infinite;
+          animation: roll 5s infinite;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
 .intro .hero-img .circle-1 {
@@ -280,12 +275,10 @@
   position: absolute;
   top: 150px;
   right: 34px;
-  -webkit-animation: rotate 4s linear;
-          animation: rotate 4s linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
+  -webkit-animation: roll 5s infinite;
+          animation: roll 5s infinite;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   z-index: 11;
 }
 
@@ -328,6 +321,28 @@
             transform: rotate(10deg);
   }
   to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes roll {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes roll {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
@@ -509,6 +524,7 @@ span.ripple {
 .resume .education h2 {
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .resume .education .timeline {
@@ -1026,16 +1042,20 @@ span.ripple {
   border-radius: 30px 30px 0 0;
 }
 
-.news .news-grid .news-title p {
+.news .news-grid .news-content {
+  padding: 10px 25px;
+}
+
+.news .news-grid .news-content .news-title p {
   text-transform: capitalize;
   margin-right: 4rem;
 }
 
-.news .news-grid .news-title p i {
+.news .news-grid .news-content .news-title p i {
   color: red;
 }
 
-.news .news-grid .news-title span i {
+.news .news-grid .news-content .news-title span i {
   color: blue;
 }
 
