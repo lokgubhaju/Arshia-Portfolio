@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: lokgubhaju.com.np
+Token: 39356f6c98c7ea7241d49ce372d08d43ce2a1ccb2f229f019f0fe399c160e5b7
